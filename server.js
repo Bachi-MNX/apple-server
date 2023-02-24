@@ -15,7 +15,7 @@ app.use(cors({
   origin: "http://localhost:3000",
   Credential: true
 }))
-
+ 
 app.use(express.json());
 app.get("/", (req, res) => {
   res.json({ message: "SERVER RUNNING..." });
@@ -27,4 +27,4 @@ app.get("/", (req, res) => {
 app.use("/", productsRoutes);
 
 
-app.listen(process.env.PORT);
+app.listen(5002);
